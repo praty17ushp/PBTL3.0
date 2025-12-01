@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    color: white;
+}
+
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+    object-fit: cover;
+}
+
+.container {
+    width: 500px;
+    margin: auto;
+    margin-top: 40px;
+    background: rgba(0,0,0,0.45);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+}
+
+.logo {
+    width: 60px;
+}
+
+#chatbox {
+    height: 450px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.userMsg, .botMsg {
+    padding: 12px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    max-width: 75%;
+}
+
+.userMsg {
+    background: #1c1c1c;
+    align-self: flex-end;
+}
+
+.botMsg {
+    background: #0f234a;
+}
+
+#typingIndicator {
+    display: none;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    background: #2483ff;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Calculator */
+
+#calcModal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.calcWindow {
+    background: #0a1626;
+    padding: 20px;
+    border-radius: 15px;
+    width: 280px;
+}
+
+#calcButtons {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.calcBtn {
+    background: #1c2a3a;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
